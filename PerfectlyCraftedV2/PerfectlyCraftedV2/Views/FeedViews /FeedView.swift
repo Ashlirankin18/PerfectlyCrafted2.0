@@ -1,14 +1,19 @@
-//
-//  FeedView.swift
-//  PerfectlyCraftedV2
-//
-//  Created by Ashli Rankin on 5/13/19.
-//  Copyright © 2019 Ashli Rankin. All rights reserved.
-//
-
 import UIKit
 
 class FeedView: UIView {
 
-   
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    
+  }
+
+  required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    
+  }
+  
+  func commonInit(){
+    
+  }
+
 }
