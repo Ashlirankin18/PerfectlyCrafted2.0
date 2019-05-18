@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2E26BEFA228A068A006F2FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BEF9228A068A006F2FC9 /* AppDelegate.swift */; };
-		2E26BEFC228A068A006F2FC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BEFB228A068A006F2FC9 /* ViewController.swift */; };
+		2E26BEFC228A068A006F2FC9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BEFB228A068A006F2FC9 /* FeedViewController.swift */; };
 		2E26BEFF228A068A006F2FC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BEFD228A068A006F2FC9 /* Main.storyboard */; };
 		2E26BF01228A068D006F2FC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BF00228A068D006F2FC9 /* Assets.xcassets */; };
 		2E26BF04228A068D006F2FC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E26BF02228A068D006F2FC9 /* LaunchScreen.storyboard */; };
 		2E26BF0F228A068D006F2FC9 /* PerfectlyCraftedV2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E26BF0E228A068D006F2FC9 /* PerfectlyCraftedV2Tests.swift */; };
+		2E921699228DF00100BF4D0E /* StoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E921697228DF00100BF4D0E /* StoriesCell.swift */; };
+		2E92169A228DF00100BF4D0E /* StoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E921698228DF00100BF4D0E /* StoriesCell.xib */; };
 		2E99A3D4228AFC54000BD57A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99A3D3228AFC54000BD57A /* FeedView.swift */; };
+		2EDF68C7228F1B3300E01379 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF68C6228F1B3300E01379 /* StoriesView.swift */; };
 		2EE3A9F4228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */; };
 		2EE3A9F8228A0D2E00C1E6FD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */; };
 		2EE3A9F9228A0D2E00C1E6FD /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F7228A0D2E00C1E6FD /* FeedCell.xib */; };
@@ -32,7 +35,7 @@
 /* Begin PBXFileReference section */
 		2E26BEF6228A068A006F2FC9 /* PerfectlyCraftedV2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerfectlyCraftedV2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E26BEF9228A068A006F2FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2E26BEFB228A068A006F2FC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2E26BEFB228A068A006F2FC9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2E26BEFE228A068A006F2FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E26BF00228A068D006F2FC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E26BF03228A068D006F2FC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,7 +43,10 @@
 		2E26BF0A228A068D006F2FC9 /* PerfectlyCraftedV2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PerfectlyCraftedV2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E26BF0E228A068D006F2FC9 /* PerfectlyCraftedV2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectlyCraftedV2Tests.swift; sourceTree = "<group>"; };
 		2E26BF10228A068D006F2FC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E921697228DF00100BF4D0E /* StoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCell.swift; sourceTree = "<group>"; };
+		2E921698228DF00100BF4D0E /* StoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCell.xib; sourceTree = "<group>"; };
 		2E99A3D3228AFC54000BD57A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedView.swift; path = "FeedViews /FeedView.swift"; sourceTree = "<group>"; };
+		2EDF68C6228F1B3300E01379 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
 		2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectlyCraftedTabbar.swift; sourceTree = "<group>"; };
 		2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		2EE3A9F7228A0D2E00C1E6FD /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
@@ -116,7 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */,
-				2E26BEFB228A068A006F2FC9 /* ViewController.swift */,
+				2E26BEFB228A068A006F2FC9 /* FeedViewController.swift */,
+				2EDF68C6228F1B3300E01379 /* StoriesView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -144,6 +151,8 @@
 			children = (
 				2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */,
 				2E99A3D2228AFB05000BD57A /* nibFiles */,
+				2E921697228DF00100BF4D0E /* StoriesCell.swift */,
+				2E921698228DF00100BF4D0E /* StoriesCell.xib */,
 			);
 			path = "FeedViews ";
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 			files = (
 				2E26BF04228A068D006F2FC9 /* LaunchScreen.storyboard in Resources */,
 				2EE3A9F9228A0D2E00C1E6FD /* FeedCell.xib in Resources */,
+				2E92169A228DF00100BF4D0E /* StoriesCell.xib in Resources */,
 				2E26BF01228A068D006F2FC9 /* Assets.xcassets in Resources */,
 				2E26BEFF228A068A006F2FC9 /* Main.storyboard in Resources */,
 			);
@@ -250,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EDF68C7228F1B3300E01379 /* StoriesView.swift in Sources */,
 				2E99A3D4228AFC54000BD57A /* FeedView.swift in Sources */,
-				2E26BEFC228A068A006F2FC9 /* ViewController.swift in Sources */,
+				2E26BEFC228A068A006F2FC9 /* FeedViewController.swift in Sources */,
+				2E921699228DF00100BF4D0E /* StoriesCell.swift in Sources */,
 				2EE3A9F8228A0D2E00C1E6FD /* FeedCell.swift in Sources */,
 				2EE3A9F4228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift in Sources */,
 				2E26BEFA228A068A006F2FC9 /* AppDelegate.swift in Sources */,
