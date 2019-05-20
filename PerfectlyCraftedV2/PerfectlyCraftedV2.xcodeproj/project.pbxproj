@@ -17,6 +17,8 @@
 		2E92169A228DF00100BF4D0E /* StoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E921698228DF00100BF4D0E /* StoriesCell.xib */; };
 		2E99A3D4228AFC54000BD57A /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E99A3D3228AFC54000BD57A /* FeedView.swift */; };
 		2EDF68C7228F1B3300E01379 /* StoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF68C6228F1B3300E01379 /* StoriesView.swift */; };
+		2EDF68CB22903B8900E01379 /* ImageSizeExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF68CA22903B8900E01379 /* ImageSizeExt.swift */; };
+		2EDF68CE22931A4B00E01379 /* AddPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EDF68CD22931A4B00E01379 /* AddPostViewController.swift */; };
 		2EE3A9F4228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */; };
 		2EE3A9F8228A0D2E00C1E6FD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */; };
 		2EE3A9F9228A0D2E00C1E6FD /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EE3A9F7228A0D2E00C1E6FD /* FeedCell.xib */; };
@@ -47,6 +49,8 @@
 		2E921698228DF00100BF4D0E /* StoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCell.xib; sourceTree = "<group>"; };
 		2E99A3D3228AFC54000BD57A /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedView.swift; path = "FeedViews /FeedView.swift"; sourceTree = "<group>"; };
 		2EDF68C6228F1B3300E01379 /* StoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesView.swift; sourceTree = "<group>"; };
+		2EDF68CA22903B8900E01379 /* ImageSizeExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSizeExt.swift; sourceTree = "<group>"; };
+		2EDF68CD22931A4B00E01379 /* AddPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostViewController.swift; sourceTree = "<group>"; };
 		2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectlyCraftedTabbar.swift; sourceTree = "<group>"; };
 		2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		2EE3A9F7228A0D2E00C1E6FD /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			children = (
 				2E26BF1A228A06B5006F2FC9 /* Controllers */,
 				2E26BF1B228A06C2006F2FC9 /* Views */,
+				2EDF68CC22903C2400E01379 /* Extensions */,
 				2E26BF19228A06A7006F2FC9 /* SupportingFiles */,
 				2E26BF05228A068D006F2FC9 /* Info.plist */,
 			);
@@ -121,9 +126,9 @@
 		2E26BF1A228A06B5006F2FC9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2EDF68CD22931A4B00E01379 /* AddPostViewController.swift */,
 				2EE3A9F3228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift */,
 				2E26BEFB228A068A006F2FC9 /* FeedViewController.swift */,
-				2EDF68C6228F1B3300E01379 /* StoriesView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				2E99A3D3228AFC54000BD57A /* FeedView.swift */,
+				2EDF68C6228F1B3300E01379 /* StoriesView.swift */,
 				2E26BEFD228A068A006F2FC9 /* Main.storyboard */,
 				2EE3A9F5228A088D00C1E6FD /* FeedViews  */,
 			);
@@ -141,18 +147,26 @@
 		2E99A3D2228AFB05000BD57A /* nibFiles */ = {
 			isa = PBXGroup;
 			children = (
+				2E921698228DF00100BF4D0E /* StoriesCell.xib */,
 				2EE3A9F7228A0D2E00C1E6FD /* FeedCell.xib */,
 			);
 			path = nibFiles;
+			sourceTree = "<group>";
+		};
+		2EDF68CC22903C2400E01379 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2EDF68CA22903B8900E01379 /* ImageSizeExt.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2EE3A9F5228A088D00C1E6FD /* FeedViews  */ = {
 			isa = PBXGroup;
 			children = (
 				2EE3A9F6228A0D2E00C1E6FD /* FeedCell.swift */,
-				2E99A3D2228AFB05000BD57A /* nibFiles */,
 				2E921697228DF00100BF4D0E /* StoriesCell.swift */,
-				2E921698228DF00100BF4D0E /* StoriesCell.xib */,
+				2E99A3D2228AFB05000BD57A /* nibFiles */,
 			);
 			path = "FeedViews ";
 			sourceTree = "<group>";
@@ -261,9 +275,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EDF68C7228F1B3300E01379 /* StoriesView.swift in Sources */,
+				2EDF68CE22931A4B00E01379 /* AddPostViewController.swift in Sources */,
 				2E99A3D4228AFC54000BD57A /* FeedView.swift in Sources */,
 				2E26BEFC228A068A006F2FC9 /* FeedViewController.swift in Sources */,
 				2E921699228DF00100BF4D0E /* StoriesCell.swift in Sources */,
+				2EDF68CB22903B8900E01379 /* ImageSizeExt.swift in Sources */,
 				2EE3A9F8228A0D2E00C1E6FD /* FeedCell.swift in Sources */,
 				2EE3A9F4228A086B00C1E6FD /* PerfectlyCraftedTabbar.swift in Sources */,
 				2E26BEFA228A068A006F2FC9 /* AppDelegate.swift in Sources */,

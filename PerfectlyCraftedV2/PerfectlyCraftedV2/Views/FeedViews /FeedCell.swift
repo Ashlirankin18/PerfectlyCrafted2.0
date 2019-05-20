@@ -17,5 +17,6 @@ class FeedCell: UICollectionViewCell {
     super.layoutSubviews()
   userImage.layer.cornerRadius = userImage.frame.width/2
     userImage.layer.masksToBounds = true
+    
   }
 }

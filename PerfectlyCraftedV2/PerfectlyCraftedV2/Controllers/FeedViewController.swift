@@ -9,7 +9,7 @@ class FeedViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
     self.feedView = feedView
   }
-
+  let images = [#imageLiteral(resourceName: "20190514_203627.jpg"),#imageLiteral(resourceName: "20190514_203656.jpg"),#imageLiteral(resourceName: "20190514_204216.jpg"),#imageLiteral(resourceName: "bobby-rodriguezz-617687-unsplash.jpg")]
   required init?(coder aDecoder: NSCoder) {
    super.init(coder: aDecoder)
 
@@ -32,7 +32,7 @@ extension FeedViewController:UICollectionViewDataSource{
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     if collectionView == feedView.feedCollectionView {
-      return 3
+      return images.count
     } else {
       return 5
     }
@@ -44,6 +44,8 @@ extension FeedViewController:UICollectionViewDataSource{
       return cell
     } else {
       guard let cell = feedView.feedCollectionView.dequeueReusableCell(withReuseIdentifier: "FeedCell", for: indexPath) as? FeedCell else {fatalError("No FeedCell found")}
+       let image = images[indexPath.row]
+      cell.postImage.image = image
       cell.backgroundColor = .white
       return cell
       
@@ -68,7 +70,7 @@ extension FeedViewController:UICollectionViewDataSource{
 extension FeedViewController:UICollectionViewDelegateFlowLayout{
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     if collectionView == feedView.feedCollectionView {
-       return CGSize(width: view.bounds.width, height:view.bounds.height)
+       return CGSize(width: view.bounds.width, height:500)
     } else {
       return  CGSize(width: 100, height: 100)
     }
