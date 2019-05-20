@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StoriesCell" customModule="PerfectlyCraftedV2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20190514_204216" translatesAutoresizingMaskIntoConstraints="NO" id="HhP-uc-kSW">
+                        <rect key="frame" x="0.0" y="5" width="172" height="172"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="HhP-uc-kSW" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="1zx-pw-Y1q"/>
+                <constraint firstItem="HhP-uc-kSW" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="eoj-TV-BpN"/>
+                <constraint firstItem="HhP-uc-kSW" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="l6f-sb-HSW"/>
+                <constraint firstItem="HhP-uc-kSW" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="tGi-Am-pzE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="172" height="177"/>
+            <connections>
+                <outlet property="PCUserImage" destination="HhP-uc-kSW" id="59J-Uq-AcP"/>
+            </connections>
+            <point key="canvasLocation" x="99" y="78"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="20190514_204216" width="1592" height="3264"/>
+    </resources>
+</document>
